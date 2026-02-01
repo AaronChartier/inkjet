@@ -109,7 +109,7 @@ By default, `inkjet` saves settings to `~/.inkjet/config.json`. However, it supp
 
 ---
 
-## Claude Skill / AI Integration
+## Claude Skill
 
 `inkjet` is built to be a "Claude Skill." By adding the `inkjet` binary to your environment, you give your AI agents the ability to:
 - Print physical status receipts for long-running tasks.
