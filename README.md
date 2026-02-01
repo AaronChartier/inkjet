@@ -2,7 +2,7 @@
 
 **The physical terminal for agents. Zero ink. Pennies per print.**
 
-`inkjet` is a professional-grade control plane for inexpensive X6H-style Bluetooth thermal printers. Designed for humans and agentic workflows that require high-frequency physical output without the overhead of proprietary ink, drivers, or "Low Cyan" warnings.
+`inkjet` is a CLI control plane for inexpensive X6H-style Bluetooth thermal printers. Its designed for humans and agentic workflows that require high-frequency physical output without the overhead of proprietary ink, drivers, or "Low Cyan" warnings.
 
 [Install](#install) • [Quickstart](#quickstart) • [Why inkjet?](#why-inkjet) • [Claude Skill](#claude-skill)
 
@@ -11,7 +11,7 @@
 ## Why inkjet?
 
 ### 1. The Name is Ironic
-Traditional inkjet printers are a nightmare of DRM-locked cartridges, clogged heads, and expensive maintenance. **inkjet** has zero ink. It uses heat, cheap thermal paper, and pure code.
+Traditional inkjet printers are a nightmare of DRM-locked cartridges, clogged heads, and expensive maintenance. **inkjet** has zero ink. It uses heat, cheap thermal paper, and code.
 
 ### 2. Agentic Economics
 If your AI agent prints 50 status updates, debug logs, or "receipts of thought" per day, a standard printer would bankrupt you. Thermal paper costs practically nothing. `inkjet` enables a high-bandwidth, ultra-low-cost physical signaling channel for local AI.
@@ -63,7 +63,7 @@ inkjet whoami
 ### Printing
 - **Text**: `inkjet print text "Hello"` (supports `--size`, `--font`, and stdin via `-`)
 - **Images**: `inkjet print image ./photo.png` (auto-dithering for thermal media)
-- **QR Codes**: `inkjet print qr "https://github.com/aaronchartier/inkjet"`
+- **QR Codes**: `inkjet print qr "https://github.com/AaronChartier/inkjet"`
 - **Stdin**: `echo "Agent log..." | inkjet print text -`
 
 ### Configuration
