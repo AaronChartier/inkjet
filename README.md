@@ -2,7 +2,7 @@
 
 **The physical terminal for agents. Zero ink. Pennies per print.**
 
-`inkjet` is a CLI control plane for inexpensive X6H-style Bluetooth thermal printers. Its designed for humans and agentic workflows that require high-frequency physical output without the overhead of proprietary ink, drivers, or "Low Cyan" warnings.
+`inkjet` is a CLI control plane for inexpensive X6H/cat toy style Bluetooth thermal printers. Its designed for humans and agentic workflows that require high-frequency physical output without the overhead of proprietary ink, drivers, or "Low Cyan" warnings.
 
 [Install](#install) • [Quickstart](#quickstart) • [Why inkjet?](#why-inkjet) • [Claude Skill](#claude-skill)
 
