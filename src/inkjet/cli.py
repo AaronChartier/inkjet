@@ -21,6 +21,21 @@ app = typer.Typer(
     no_args_is_help=True,
 )
 
+def version_callback(value: bool):
+    if value:
+        from . import __version__
+        console.print(f"inkjet v{__version__}")
+        raise typer.Exit()
+
+@app.callback()
+def main(
+    version: bool = typer.Option(None, "--version", callback=version_callback, is_eager=True),
+):
+    """
+    🖨️ Bluetooth thermal printer CLI. Print text, images, QR codes.
+    """
+    pass
+
 # Print subcommand group
 print_app = typer.Typer(help="Print content to the thermal printer")
 app.add_typer(print_app, name="print")
