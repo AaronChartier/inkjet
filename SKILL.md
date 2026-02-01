@@ -3,21 +3,29 @@ name: inkjet
 description: "Print text, images, and QR codes to a Bluetooth thermal printer. Use `inkjet print` for output, `inkjet scan` to discover printers."
 homepage: https://github.com/AaronChartier/inkjet
 metadata:
-  clawdbot:
+  openclaw:
     emoji: "🖨️"
-    requires:
-      bins: ["inkjet"]
-      bluetooth: true
+    requires: { bins: ["inkjet"], bluetooth: true }
     install:
-      - id: "pip"
-        kind: "pip"
-        package: "inkjet"
-        label: "Install inkjet (pip)"
+      - { id: "pip", kind: "pip", package: "inkjet", label: "Install (pip)" }
+      - { id: "brew", kind: "brew", package: "aaronchartier/tap/inkjet", label: "Install (Homebrew)" }
 ---
 
 # Thermal Printer Skill
 
 Print text, images, and QR codes to a Bluetooth thermal printer using the `inkjet` CLI. Thermal paper is extremely low-cost, enabling high-frequency physical output.
+
+## Installation
+
+### via pip (Universal)
+```bash
+pip install inkjet
+```
+
+### via Homebrew (macOS)
+```bash
+brew install aaronchartier/tap/inkjet
+```
 
 ## Setup
 
