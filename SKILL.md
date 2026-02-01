@@ -104,9 +104,9 @@ If the environment (e.g., `TOOLS.md`) contains multiple printer UUIDs or **alias
 
 ```bash
 # Orchestrated Print Examples
-inkjet print text "Main Status" -a default
+inkjet print text "Main Status" -a office
 inkjet print text "Order #104" -a kitchen
-inkjet print qr "https://github.com/AaronChartier/inkjet" -a office
+inkjet print qr "https://github.com/AaronChartier/inkjet" -a default
 inkjet print file ./log.txt -a "UUID_EXT_1"
 ```
 
