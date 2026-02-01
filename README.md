@@ -60,6 +60,11 @@ inkjet whoami
 
 ## Usage
 
+### General
+- **About**: `inkjet about` (Show project credits and version)
+- **Status**: `inkjet whoami` (Show current configuration)
+- **Doctor**: `inkjet doctor` (Diagnose connection issues)
+
 ### Printing
 - **Text**: `inkjet print text "Hello"` (supports `--size`, `--font`, and stdin via `-`)
 - **Images**: `inkjet print image ./photo.png` (auto-dithering for thermal media)
@@ -72,7 +77,6 @@ inkjet whoami
 - **Layout**: `inkjet config set padding_top 20` (manage margins/spacing)
 - **Aliases**: `inkjet config alias den "15F8CC20-..."` (save friendly names)
 - **Default**: `inkjet config set printer <UUID>` (shortcut for setting the default device)
-- **Whoami**: `inkjet whoami` (shows active config, aliases, and hardware state)
 
 ### Configuration Schema (JSON)
 Agents can modify behavior by writing directly to `~/.inkjet/config.json` or `./.inkjet/config.json`:

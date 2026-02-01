@@ -103,10 +103,9 @@ def about():
     console.print("Thermal Printer CLI for Humans and Agents.")
     console.print()
     console.print("Created by: [bold]Aaron Chartier[/bold]")
-    console.print("Website:    https://inkjet.aaronchartier.com")
     console.print("GitHub:     https://github.com/AaronChartier/inkjet")
     console.print()
-    console.print("[italic]Print fast. Script faster. Zero ink.[/italic]")
+    console.print("[italic]The physical terminal for agents. Zero ink.[/italic]")
 
 @app.command()
 def doctor():
