@@ -13,7 +13,8 @@ metadata:
 
 # Thermal Printer Skill
 
-Print text, images, and QR codes to a Bluetooth thermal printer using the `inkjet` CLI. Thermal paper is extremely low-cost, enabling high-frequency physical output.
+Print text, images, and QR codes to a small cheap Bluetooth thermal printer like the X6h, GT01, and childrens toy cat printers using the `inkjet` CLI. Thermal paper is extremely low-cost, enabling high-frequency physical output.
+
 
 ## Installation
 
