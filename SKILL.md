@@ -43,7 +43,7 @@ inkjet whoami
 
 ## Print Text
 
-Print strings directly. Supports standard escape sequences like `\n` for multiline output.
+Print strings directly. Supports standard escape sequences like `\n` for multiline output. Do not use emojis.
 
 ```bash
 inkjet print text "Hello, World!"
@@ -53,7 +53,7 @@ inkjet print text "Big Text" --size 72
 
 ## Print Markdown
 
-Render high-fidelity formatted content using Markdown syntax. This is the recommended way for agents to output complex receipts or logs without saving temporary files.
+Render high-fidelity formatted content using Markdown syntax. This is the recommended way for agents to output complex receipts or logs without saving temporary files. Do not use emojis.
 
 ```bash
 inkjet print text "# Order 104\n- 1x Coffee\n- 1x Donut" --markdown
