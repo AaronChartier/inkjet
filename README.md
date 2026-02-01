@@ -39,6 +39,10 @@ On the first run, macOS will display a system dialog asking for **Bluetooth Acce
 2. If the first command failed with an error, simply run it again—it will succeed now that permissions are granted.
 3. Ensure Bluetooth is toggled **ON** in System Settings.
 
+### Note for Everyone Else
+Unfortunately I cannot guarantee support for other OSes(es) at this time.
+Hope that changes soon - happy tinkering!
+
 ---
 
 ## Quickstart
