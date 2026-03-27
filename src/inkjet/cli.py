@@ -354,7 +354,7 @@ def print_file(
             content = f.read().strip()
         
         # Apply escape character handling
-        decode_cli_escapes(content)
+        content = decode_cli_escapes(content)
 
         if path.endswith(".md"):
             img = render_markdown(
