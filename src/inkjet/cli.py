@@ -44,6 +44,16 @@ app.add_typer(print_app, name="print")
 config_app = typer.Typer(help="Manage configuration")
 app.add_typer(config_app, name="config")
 
+def decode_cli_escapes(value: str) -> str:
+    """Decode common escaped whitespace without corrupting non-ASCII text."""
+    return (
+        value.replace("\\r\\n", "\n")
+        .replace("\\n", "\n")
+        .replace("\\t", "\t")
+        .replace("\\r", "\r")
+        .replace("\\\\", "\\")
+    )
+
 def resolve_address(address: Optional[str]) -> Optional[str]:
     """Helper to resolve a UUID/MAC from config, alias, or direct input."""
     config = load_config()
@@ -203,10 +213,7 @@ def print_text(
         text = sys.stdin.read().strip()
 
     # Apply escape character handling so \n becomes a real newline
-    try:
-        text = text.encode('utf-8').decode('unicode_escape')
-    except Exception:
-        pass
+    text = decode_cli_escapes(text)
 
     if markdown:
         image = render_markdown(
@@ -347,10 +354,7 @@ def print_file(
             content = f.read().strip()
         
         # Apply escape character handling
-        try:
-            content = content.encode('utf-8').decode('unicode_escape')
-        except Exception:
-            pass
+        content = decode_cli_escapes(content)
 
         if path.endswith(".md"):
             img = render_markdown(
